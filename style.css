@@ -50,9 +50,13 @@ a{
     display:flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    margin: 0 1rem;
-
-   
+    margin: 0 1rem;  
+     transform:translateY(0px);
+    transition: all 0.5s ease-in-out; 
+}
+.container-row:hover{
+    transform:translateY(-10px);
+    transition: all 0.5s ease-in-out;
 }
 h3{
     padding-top: 1rem;
@@ -93,7 +97,12 @@ h3{
     justify-content: center;
     padding-top: 2rem;
     font-family: var(--font-family);
+     transition:all 0.1s linear;
       
+}
+.design:hover{
+    font-size:1.2em;
+    transition:all 0.1s linear;
 }
 .part1{
     display: flex;
@@ -110,12 +119,24 @@ h3{
     display: flex;
     justify-content: center;
     padding: 4rem 0;
+   
+}
+.image1{
+     height: 200px;
+    width: 200px; 
 }
 
 .image{
     height: 200px;
     width: 200px;
+    transition:all 0.2s ease;
 }
+.image:hover{
+     height: 210px;
+     width: 210px;
+     transition:all 0.2s ease;
+}
+
 .border{
     display: flex;
     justify-content: center;
